@@ -1,0 +1,13 @@
+name: CarND-Advanced-Lane-Lines
+channels:
+  - https://conda.anaconda.org/menpo
+  - conda-forge
+dependencies:
+  - python==3.8.3
+  - pip==20.2.2
+  - numpy==1.19
+  - matplotlib==3.3.1
+  - jupyter
+  - pip:
+      - moviepy==1.0.3
+      - opencv-python==4.4.0.42
