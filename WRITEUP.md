@@ -25,6 +25,10 @@ The goals / steps of this project are the following:
 [detected_lines_from_polynomial]: ./output_images/detected_lines_from_polynomial.jpg "Detected Lines From Polynomial"
 [area_between_lines]: ./output_images/area_between_lines.jpg "Area between lines"
 
+**Important note**
+
+The sections' number in this writeup match with the ones in the jupyter notebook. You can check the code in those sections if you consider that the one shown here is not enough
+
 ### 1. Camera Calibration
 
 From a set of chessboard pictures taken with the camera used for the project, we try to match the object points (the corners we know the chessboard has) with the image points (the actual corners in the image)
@@ -172,3 +176,11 @@ Use the found polynomial to draw the area between the lane lines
 ### 10. Apply all to a video!
 
 Use the pipeline! You can downlowd my output.mp4 [here](https://github.com/matiaslgh/CarND-Advanced-Lane-Lines/blob/master/output.mp4)
+
+### Thoughts
+
+_Briefly discuss any problems / issues you faced in your implementation of this project. Where will your pipeline likely fail? What could you do to make it more robust?_
+
+- Still struggling with shadows
+- When the lane is not completely plane, the trasformation fails really bad. This does not work with the challenge videos
+- I feel that the currect hyperparameter configuration works quite good with the project video but it won't work ok in tougher scenarios
